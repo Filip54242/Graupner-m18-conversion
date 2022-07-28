@@ -35,3 +35,10 @@ int16_t RCJoystick::getAxis(JoystickAxis axis)
         return enabledAxes[axis]->getNormalized();
     return 0;
 }
+
+int16_t RCJoystick::getAxisRaw(JoystickAxis axis)
+{
+    if(enabledAxes[axis]!=NULL)
+        return enabledAxes[axis]->getRaw();
+    return 0;
+}

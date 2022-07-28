@@ -33,6 +33,7 @@ public:
     void setAxisOutput(JoystickAxis axis, int16_t min, int16_t max);
 
     int16_t getAxis(JoystickAxis axis);
+    int16_t getAxisRaw(JoystickAxis axis);
 
 private:
     RCPotentiometer** enabledAxes;
